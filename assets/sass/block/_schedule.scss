@@ -1,0 +1,68 @@
+#schedule {
+
+    .schedule__container {
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    .schedule__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #FFF;
+        padding: 28px;
+
+        /* shading_primery */
+        box-shadow: 10px 24px 54px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    .schedule__form_box {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding-left: 56px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: -9px;
+            border-radius: 10px;
+            background-color: #FFE1D8;
+            background-image: url(../svg/schedule.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .schedule__label {
+        color: $secondryColor;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .schedule__input {
+        border-radius: 10px;
+        background-color: #FAFAFA;
+        outline: none;
+        border: none;
+        padding: 16px;
+        width: 225px;
+
+        &::placeholder {
+            color: #ABADAD;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    .schedule__btn {
+        width: 137px;
+    }
+}

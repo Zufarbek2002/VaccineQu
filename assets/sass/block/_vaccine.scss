@@ -1,0 +1,59 @@
+#vaccine {
+    margin: 80px 0;
+
+    .vaccine__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 33px;
+    }
+
+    .vacciner__title_box {
+        width: 495px;
+    }
+
+    .vaccine__p {
+        color: #B9C0C1;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .vaccine__boxes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .vaccine__box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 34px 24px;
+        width: 288px;
+
+        &::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: #FFE1D8;
+            background-image: url(../svg/vaccine.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .vaccine__p {
+            color: #ABADAD;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .vaccine__h3 {
+        color: $secondryColor;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,19 @@
+#header{
+    margin-top: 24px;
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .header__ul{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__link--active{
+        color: $primaryColor;
+    }
+}
